@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.ivica.magentoid.configuration.Configuration;
 import com.ivica.magentoid.core.MagentoidApp;
 
 public class MagentoidActivity extends Activity {
@@ -16,8 +17,15 @@ public class MagentoidActivity extends Activity {
         setContentView(R.layout.main);
         
         this.mApp = (MagentoidApp) getApplicationContext();
-        String state = mApp.getMyState();
+
+        Configuration configuration = new Configuration();
+        configuration.load(320, 480);
         
-        Toast.makeText(this, state, Toast.LENGTH_LONG).show();
+        if (configuration.ds == null) {
+            Toast.makeText(this, "Ništa", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, configuration.ds.getGeneral().getCopyright(), Toast.LENGTH_LONG).show();
+        }
+        
     }
 }

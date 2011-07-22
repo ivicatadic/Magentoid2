@@ -3,28 +3,28 @@ package com.ivica.magentoid.configuration.ds;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name="body",strict=false)
+@Root(name = "body", strict = false)
 public class BodyDS {
-	
-	@Element(name="backgroundColor",required=false)
+
+	@Element(name = "backgroundColor", required = false)
 	private String backgroundColor;
-	
-	@Element(name="scrollBackgroundColor",required=false)
+
+	@Element(name = "scrollBackgroundColor", required = false)
 	private String scrollBackgroundColor;
-	
-	@Element(name="bannerAndroidImage",required=false)
+
+	@Element(name = "bannerAndroidImage", required = false)
 	private String bannerAndroidImage;
-	
-	@Element(name="backgroundAndroidLandscapeImage",required=false)
+
+	@Element(name = "backgroundAndroidLandscapeImage", required = false)
 	private String backgroundAndroidLandscapeImage;
-	
-	@Element(name="backgroundAndroidPortraitImage",required=false)
+
+	@Element(name = "backgroundAndroidPortraitImage", required = false)
 	private String backgroundAndroidPortraitImage;
 
-	@Element(name="primaryColor",required=false)
+	@Element(name = "primaryColor", required = false)
 	private String primaryColor;
 
-	@Element(name="secondaryColor",required=false)
+	@Element(name = "secondaryColor", required = false)
 	private String secondaryColor;
 
 	public void setBackgroundColor(String backgroundColor) {
@@ -84,5 +84,5 @@ public class BodyDS {
 	public String getSecondaryColor() {
 		return secondaryColor;
 	}
-	
+
 }

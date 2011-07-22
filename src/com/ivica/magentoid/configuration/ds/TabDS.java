@@ -3,19 +3,19 @@ package com.ivica.magentoid.configuration.ds;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name="tab",strict=false)
+@Root(name = "tab", strict = false)
 public class TabDS {
-	
-	@Element(name="label",required=false)
+
+	@Element(name = "label", required = false)
 	private String label;
-	
-	@Element(name="image",required=false)
+
+	@Element(name = "image", required = false)
 	private String image;
-	
-	@Element(name="action",required=false)
+
+	@Element(name = "action", required = false)
 	private String action;
-	
-	@Element(name="menu",required=false)
+
+	@Element(name = "menu", required = false)
 	private Integer menu;
 
 	public void setLabel(String label) {

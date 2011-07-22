@@ -19,8 +19,8 @@ public class Configuration extends Model {
 				MagentoidApp.MAGENTO_APP_CODE, width, height);
 
 		try {
-			ds = serializer.read(ConfigurationDS.class,
-					client.fetchUrl(preparedUrl));
+			ds = serializer.read(ConfigurationDS.class, client
+					.fetchUrl(preparedUrl));
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -3,40 +3,40 @@ package com.ivica.magentoid.configuration.ds;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name="general",strict=false)
+@Root(name = "general", strict = false)
 public class GeneralDS {
-	
-	@Element(name="updateTimeUTC",required=false)
+
+	@Element(name = "updateTimeUTC", required = false)
 	private String updateTimeUTC;
-	
-	@Element(name="browsingMode",required=false)
+
+	@Element(name = "browsingMode", required = false)
 	private String browsingMode;
 
-	@Element(name="currencyCode",required=false)
+	@Element(name = "currencyCode", required = false)
 	private String currencyCode;
 
-	@Element(name="secureBaseUrl",required=false)
+	@Element(name = "secureBaseUrl", required = false)
 	private String secureBaseUrl;
 
-	@Element(name="emailToFriendMaxRecepients",required=false)
+	@Element(name = "emailToFriendMaxRecepients", required = false)
 	private Integer emailToFriendMaxRecepients;
 
-	@Element(name="emailAllowGuest",required=false)
+	@Element(name = "emailAllowGuest", required = false)
 	private Integer emailAllowGuest;
 
-	@Element(name="primaryStoreLang",required=false)
+	@Element(name = "primaryStoreLang", required = false)
 	private String primaryStoreLang;
 
-	@Element(name="magentoVersion",required=false)
+	@Element(name = "magentoVersion", required = false)
 	private String magentoVersion;
 
-	@Element(name="copyright",required=false)
+	@Element(name = "copyright", required = false)
 	private String copyright;
 
-	@Element(name="isAllowedGuestCheckout",required=false)
+	@Element(name = "isAllowedGuestCheckout", required = false)
 	private Integer isAllowedGuestCheckout;
 
-	@Element(name="wishlistEnable",required=false)
+	@Element(name = "wishlistEnable", required = false)
 	private Integer wishlistEnable;
 
 	public void setUpdateTimeUTC(String updateTimeUTC) {

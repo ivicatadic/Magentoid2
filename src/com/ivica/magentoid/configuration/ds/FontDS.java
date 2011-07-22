@@ -3,19 +3,19 @@ package com.ivica.magentoid.configuration.ds;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
-@Root(name="font",strict=false)
+@Root(name = "font", strict = false)
 public class FontDS {
-	
-	@Attribute(name="label")
+
+	@Attribute(name = "label")
 	private String label;
-	
-	@Attribute(name="name")
+
+	@Attribute(name = "name")
 	private String name;
-	
-	@Attribute(name="size")
+
+	@Attribute(name = "size")
 	private Integer size;
-	
-	@Attribute(name="color")
+
+	@Attribute(name = "color")
 	private String color;
 
 	public void setLabel(String label) {
@@ -49,5 +49,5 @@ public class FontDS {
 	public String getColor() {
 		return color;
 	}
-	
+
 }

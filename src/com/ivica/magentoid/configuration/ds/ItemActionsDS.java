@@ -3,10 +3,10 @@ package com.ivica.magentoid.configuration.ds;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name="itemActions",strict=false)
+@Root(name = "itemActions", strict = false)
 public class ItemActionsDS {
-	
-	@Element(name="relatedProductBackgroundColor",required=false)
+
+	@Element(name = "relatedProductBackgroundColor", required = false)
 	private String relatedProductBackgroundColor;
 
 	public void setRelatedProductBackgroundColor(
@@ -17,5 +17,5 @@ public class ItemActionsDS {
 	public String getRelatedProductBackgroundColor() {
 		return relatedProductBackgroundColor;
 	}
-	
+
 }

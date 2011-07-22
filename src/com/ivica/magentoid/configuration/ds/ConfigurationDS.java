@@ -6,37 +6,37 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-@Root(name="configuration",strict=false)
+@Root(name = "configuration", strict = false)
 public class ConfigurationDS {
-	
-	@Element(name="body",required=false)
+
+	@Element(name = "body", required = false)
 	private BodyDS body;
-	
-	@Element(name="itemActions",required=false)
+
+	@Element(name = "itemActions", required = false)
 	private ItemActionsDS itemActions;
-	
-	@ElementList(name="fonts",required=false)
+
+	@ElementList(name = "fonts", required = false)
 	private List<FontDS> fonts;
-	
-	@Element(name="navigationBar",required=false)
+
+	@Element(name = "navigationBar", required = false)
 	private NavigationBarDS navigationBar;
-	
-	@Element(name="categoryItem",required=false)
+
+	@Element(name = "categoryItem", required = false)
 	private CategoryItemDS categoryItem;
-	
-	@Element(name="defaultCheckout",required=false)
+
+	@Element(name = "defaultCheckout", required = false)
 	private DefaultCheckoutDS defaultCheckout;
-	
-	@ElementList(name="content",required=false)
+
+	@ElementList(name = "content", required = false)
 	private List<PageDS> content;
-	
-	@ElementList(name="tabBar",required=false)
+
+	@ElementList(name = "tabBar", required = false)
 	private List<TabDS> tabBar;
-	
-	@Element(name="general",required=false)
+
+	@Element(name = "general", required = false)
 	private GeneralDS general;
-	
-	@Element(name="paypal",required=false)
+
+	@Element(name = "paypal", required = false)
 	private PaypalDS paypal;
 
 	public void setBody(BodyDS body) {
@@ -118,5 +118,5 @@ public class ConfigurationDS {
 	public PaypalDS getPaypal() {
 		return paypal;
 	}
-	
+
 }

@@ -5,7 +5,8 @@ import org.simpleframework.xml.core.Persister;
 
 public class Model {
 
-	protected static Client client = MagentoidApp.client;
-	protected static Serializer serializer = new Persister();
+	protected static final MagentoidApp mApp = MagentoidApp.getInstance();
+	protected static final Client client = MagentoidApp.client;
+	protected static final Serializer serializer = new Persister();
 
 }

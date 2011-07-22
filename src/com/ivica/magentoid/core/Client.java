@@ -25,6 +25,7 @@ import org.apache.http.util.ByteArrayBuffer;
 
 public class Client {
 
+	protected static final MagentoidApp mApp = MagentoidApp.getInstance();
 	private DefaultHttpClient httpClient;
 	private static final String magentoUrl = MagentoidApp.MAGENTO_URL;
 	private static final String appCode = MagentoidApp.MAGENTO_APP_CODE;
@@ -66,6 +67,11 @@ public class Client {
 		response = httpClient.execute(httpget);
 
 		return response.getEntity().getContent();
+	}
+	
+	public InputStream fetchUrlCached(String strUrl) throws ClientProtocolException,
+	IOException {
+		return null;
 	}
 
 	public InputStream fetchUrlPost(String strUrl, List<NameValuePair> pairs)

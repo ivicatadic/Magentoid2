@@ -1,3 +1,8 @@
+/*
+ * Magentoid2
+ * 
+ * @author	Ivica Tadić <ivica.tadic@ymail.com>
+ */
 package com.ivica.magentoid.configuration.ds;
 
 import java.util.List;

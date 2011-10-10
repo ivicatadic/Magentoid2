@@ -1,3 +1,8 @@
+/*
+ * Magentoid2
+ * 
+ * @author	Ivica Tadić <ivica.tadic@ymail.com>
+ */
 package com.ivica.magentoid;
 
 import android.app.Activity;
@@ -16,7 +21,7 @@ public class MagentoidActivity extends Activity {
 		setContentView(R.layout.main);
 
 		if (mApp.getConfiguration().ds == null) {
-			Toast.makeText(this, "Ništa", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Nothing", Toast.LENGTH_LONG).show();
 		} else {
 			Toast.makeText(this, mApp.getConfiguration().ds.getGeneral().getCopyright(),
 					Toast.LENGTH_LONG).show();
